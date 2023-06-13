@@ -16,9 +16,11 @@
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 0.9375rem;
+}
 body {
     font-family: 'Overpass', sans-serif;
-    font-size: 0.9375rem;
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
@@ -39,7 +41,7 @@ body::-webkit-scrollbar {
     max-width: 20.25rem;
     border-radius: 1rem;
     background-color: var(--cardBG);
-    padding: 22px;
+    padding: 25px 25px 25px 22px;
 }
 
 /* ------------------------------------------------------ */
@@ -57,7 +59,9 @@ body::-webkit-scrollbar {
 /* ------------------------------------------------------ */
 
 .description {
-    margin: 15px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
 }
 .description h1 {
     color: var(--white);
@@ -68,6 +72,65 @@ body::-webkit-scrollbar {
 .description p {
     color: var(--lightGrey);
     font-weight: 400;
+    line-height: 20px;
 }
 
 /* ------------------------------------------------------ */
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+    margin-bottom: 25px;
+}
+.rating-button {
+    background-color: var(--darkBlue);
+    color: var(--lightGrey);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* ------------------------------------------------------ */
+
+.submit-button {
+    display: flex;
+    padding: 0.9244rem;
+    width: 100%;
+    justify-content: center;
+    border-radius: 35px;
+    border: none;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--primaryOrange);
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 650px) {
+    .card {
+        max-width: 25.60rem;
+    }
+    .icon-container {
+        width: 45px;
+        height: 46px;
+    }
+    .description {
+        margin-top: 20px;
+    }
+    .description h1 {
+        font-size: 1.8rem;
+    }
+    .description p {
+        font-size: 1.2rem;
+        line-height: 26px;
+    }
+    .rating {
+        margin: 25px 0 25px 0;
+    }
+    .rating-button {
+        width: 55px;
+        height: 55px;
+    }
+}
