@@ -90,7 +90,14 @@ body::-webkit-scrollbar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    cursor: pointer;
 }
+.rating-button:hover {
+    background-color: var(--mediumGrey);
+    color: var(--white);
+    text-decoration: solid;
+}
+
 
 /* ------------------------------------------------------ */
 
@@ -106,6 +113,11 @@ body::-webkit-scrollbar {
     background-color: var(--primaryOrange);
     letter-spacing: 0.125rem;
     text-transform: uppercase;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: var(--white);
+    color: var(--primaryOrange);
 }
 
 @media (min-width: 650px) {
