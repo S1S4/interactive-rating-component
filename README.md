@@ -21,7 +21,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Solution Page]()
+- Solution URL: [Solution Page](https://www.frontendmentor.io/solutions/responsive-interactive-rating-using-js-FvcQIGefUY)
 - Live Site: [Live Site at Github Pages](https://s1s4.github.io/interactive-rating-component/)
 
 ## My process
