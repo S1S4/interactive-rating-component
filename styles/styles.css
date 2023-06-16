@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
-.thank-you p#rating {
+.thank-you p#rate {
     display: flex;
     justify-content: center;
     font-weight: 400;
